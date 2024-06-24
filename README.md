@@ -4,4 +4,4 @@
 1. Add dummy content in the main area so that the page is scrollable.
 2. The Navigation menu should be sticky.
 3. Try creating without JS. Use minimal JS if required.
-4. 4. Take care of responsiveness from mobile to Desktop and everything in between.
+4. Take care of responsiveness from mobile to Desktop and everything in between.

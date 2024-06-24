@@ -1,0 +1,267 @@
+body {
+    margin: 0;
+    padding: 0;  
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: #000037;
+}
+
+figure {
+    margin: 0;
+}
+
+section {
+    padding: 0 1.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.navbar {
+    position: relative;
+}
+
+.navbar__menu {
+    display: none;
+}
+
+.navbar__menu.active {
+    display: block;
+    padding: 0;
+}
+
+.navbar__menu.active .navbar__dropdown {
+    line-height: 4rem;
+}
+
+.navbar__dropdown__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#site-navigation {
+    display: none;
+}
+
+.mobile-menu {
+    display: block;
+    height: 100vh;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.mobile-menu #site-navigation {
+    display: block;
+}
+
+.mobile-menu .navbar__item {
+    padding: 0 1rem;
+    border-bottom: #0e2336 1px solid;
+}
+
+.site-mobile-menu.active {
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+    transition: all 200ms ease-in-out;
+}
+
+.navbar__item a {
+    color: white;
+    font-weight: 700;
+    transition: color 100ms ease-in-out;
+}
+
+.navbar__item a:hover, a:focus {
+    color: #2579de;
+}
+
+.navbar__menu.active .navbar__dropdown.active {
+    display: block;
+}
+
+.navbar__menu.active .navbar__dropdown.active a {
+    color: #2579de;
+}
+
+.navbar__menu.active .navbar__dropdown .navbar__dropdown-caret svg {
+    fill: #fff;
+    width: 0.75rem;
+    transition: all 150ms ease-in-out;
+}
+
+.navbar__menu.active .navbar__dropdown.active .navbar__dropdown-caret svg {
+    fill: #2579de;
+}
+
+.navbar__menu.active .navbar__dropdown-menu {
+    display: none;
+}
+
+.navbar__menu.active .navbar__dropdown-menu.show {
+    display: block;
+    padding: 0 1rem;
+}
+
+.navbar__menu.active .navbar__dropdown-menu.show li {
+    display: flex;
+    align-items: center;
+    line-height: 3rem;
+}
+
+.navbar__menu.active .navbar__dropdown-menu.show li:last-child {
+    padding-bottom: 0.75rem;
+}
+
+
+.navbar__menu.active .navbar__dropdown-menu.show li::before {
+    background-color: #fff;
+    content: "";
+    display: block;
+    height: 0.1rem;
+    width: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.navbar__menu.active .navbar__dropdown-menu.show li a {
+    color: #fff;
+    transition: all 150ms ease-in-out;
+}
+
+.navbar__menu.active .navbar__dropdown-menu.show li a:hover {
+    color: #2579de;
+}
+
+.menu-bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: transform 0.3s ease;
+}
+
+.menu-bar:nth-child(2) {
+    margin: 5px 0;
+}
+
+.active .menu-bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.active .menu-bar:nth-child(2) {
+    opacity: 0;
+}
+
+.active .menu-bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+@media only screen and (min-width: 920px) {
+    main {
+        margin: 0 10rem;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+        background-color: #000037;
+        z-index: 10;
+        padding: 0;
+    }
+
+    #site-navigation {
+        display: flex;
+        align-items: center;
+    }
+
+    figure {
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 40px;
+        margin-inline-end: 40px;
+    }
+
+    section {
+        padding: 0 4rem;
+    }
+
+    .navbar__menu .navbar__item .navbar__dropdown-menu {
+        display: none;
+    }
+    
+    .navbar__menu .navbar__item:hover > .navbar__dropdown-menu {
+        display: block;
+    }
+
+    .navbar__menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .navbar__dropdown-menu {
+        position: absolute;
+        background-color: #000037;
+        padding: 25px 10px 10px;
+        width: 208px;
+    }
+    
+    .navbar__dropdown-menu li {
+        line-height: 3rem;
+    }
+
+    .site-mobile-menu, .menu-bar {
+        display: none;
+    }
+    
+}
+
+@media only screen and (min-width: 1024px) {
+    .navbar__menu {
+        gap: 2rem;
+    }
+    
+}
+
+@media only screen and (min-width: 1400px) {
+    main {
+        margin: 0 11.5rem;
+    }
+
+    .navbar__menu {
+        gap: 2rem;
+    }
+}
+
+@media only screen and (min-width: 2500px) {
+    main {
+        margin: 0 46rem;
+    }
+}
+
+

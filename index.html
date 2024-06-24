@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="site-header">
+        <div id="site-branding">
+            <figure>
+                <a href="/">
+                    <picture>
+                        <img src="assets/MW-logo.png" width="141px" height="41px">
+                    </picture>
+                </a>
+            </figure>
+        </div>
+        <div class="site-mobile-menu">
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+        </div>
+        <div id="site-navigation">
+            <nav class="navbar">
+                <ul class="navbar__menu">
+                    <li class="navbar__item navbar__dropdown">
+                        <div class="navbar__dropdown__container">
+                            <a href="auctions.html" class="navbar__link">Auctions</a>
+                            <span class="navbar__dropdown-caret">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+                            </span>
+                        </div>
+                        <ul class="navbar__dropdown-menu">
+                            <li><a href="#" class="navbar__dropdown-item">How to Bid</a></li>
+                            <li><a href="#" class="navbar__dropdown-item">Register to Bid</a></li>
+                            <li><a href="#" class="navbar__dropdown-item">Payment</a></li>
+                            <li><a href="#" class="navbar__dropdown-item">Collection & Shipping</a></li>
+                            <li><a href="#" class="navbar__dropdown-item">Conditions of Sale</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar__item navbar__dropdown">
+                        <div class="navbar__dropdown__container">
+                            <a href="buying.html" class="navbar__link">Buying</a>
+                            <span class="navbar__dropdown-caret">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+                            </span>
+                        </div>
+                        <ul class="navbar__dropdown-menu">
+                            <li><a href="#" class="navbar__dropdown-item">How to Bid</a></li>
+                            <li><a href="#" class="navbar__dropdown-item">Register to Bid</a></li>
+                            <li><a href="#" class="navbar__dropdown-item">Payment</a></li>
+                            <li><a href="#" class="navbar__dropdown-item">Collection & Shipping</a></li>
+                            <li><a href="#" class="navbar__dropdown-item">Conditions of Sale</a></li>
+                            <li><a href="#" class="navbar__dropdown-item">Document Upload</a></li>
+                            <li><a href="#" class="navbar__dropdown-item">FAQS: Buying</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar__item navbar__dropdown">
+                        <div class="navbar__dropdown__container">
+                            <a href="selling.html" class="navbar__link">Selling</a>
+                            <span class="navbar__dropdown-caret">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+                            </span>
+                        </div>
+                        <ul class="navbar__dropdown-menu">
+                            <li><a href="#" class="navbar__dropdown-item">How to Bid</a></li>
+                            <li><a href="#" class="navbar__dropdown-item">Register to Bid</a></li>
+                            <li><a href="#" class="navbar__dropdown-item">Payment</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar__item navbar__dropdown">
+                        <div class="navbar__dropdown__container">
+                            <a href="about.html" class="navbar__link">About Stair</a>
+                            <span class="navbar__dropdown-caret">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+                            </span>
+                        </div>
+                        <ul class="navbar__dropdown-menu">
+                            <li><a href="#" class="navbar__dropdown-item">About Us</a></li>
+                            <li><a href="#" class="navbar__dropdown-item">Services</a></li>
+                            <li><a href="#" class="navbar__dropdown-item">Payment</a></li>
+                            <li><a href="#" class="navbar__dropdown-item">Collection & Shipping</a></li>
+                            <li><a href="#" class="navbar__dropdown-item">Conditions of Sale</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar__item navbar__dropdown">
+                        <div class="navbar__dropdown__container">
+                            <a href="news.html" class="navbar__link">News & Insights</a>
+                            <span class="navbar__dropdown-caret">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+                            </span>
+                        </div>
+                        <ul class="navbar__dropdown-menu">
+                            <li><a href="#" class="navbar__dropdown-item">News</a></li>
+                            <li><a href="#" class="navbar__dropdown-item">Insights</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar__item navbar__dropdown">
+                        <div class="navbar__dropdown__container">
+                            <a href="contact.html" class="navbar__link">Contact Us</a>
+                            <span class="navbar__dropdown-caret">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+                            </span>
+                        </div>
+                        <ul class="navbar__dropdown-menu">
+                            <li><a href="#" class="navbar__dropdown-item">Contact</a></li>
+                            <li><a href="#" class="navbar__dropdown-item">Questions</a></li>
+                            <li><a href="#" class="navbar__dropdown-item">Support</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <article>
+            <section>
+                <h3>ISHQ</h3>
+                <p>Founded in 2024, 'Ishq' has established itself as a premier destination for art collectors seeking quality and authenticity. Our commitment to showcasing exceptional artworks and providing a seamless auction experience has earned us the trust of collectors worldwide.</p>
+            </section>
+            <section>
+                <h3>Online Auctions</h3>
+                <p>Online auctions provide a dynamic marketplace where buyers and sellers can engage in bidding for various products and services. Unlike traditional auctions, these digital platforms offer convenience and a global reach.</p>
+                <p>Discover exquisite artworks from renowned artists and emerging talents in our exclusive online picture gallery auction. Explore a curated selection of paintings, sculptures, and photographs, each meticulously vetted to ensure exceptional quality and artistic merit.</p>
+            </section>
+            <section>
+                <h3>Choosing the Right Platform</h3>
+                <p>When selecting a platform for online auctions, consider factors such as reputation, user interface, fees, and payment options. Look for platforms that offer secure transactions and provide adequate seller and buyer protections.</p>
+                <p>Handpicked artworks spanning various styles and genres to suit every collector's taste.</p>
+                <p>Backed by 60 years of expertise in the art industry, ensuring authenticity and value.</p>
+            </section>
+            <section>
+                <h3>Setting Up Your Account</h3>
+                <p>To start participating in online auctions, you'll need to create an account on the chosen platform. Provide accurate information and verify your identity if required. Follow the platform's guidelines for account setup to ensure smooth transactions.</p>
+                <p>Join a community of passionate art enthusiasts and collectors. Whether you're starting your collection or adding to it, ISHQ offers a diverse range of artworks to inspire and enrich your space.</p>
+            </section>
+            <section>
+                <h3>Navigating the Interface</h3>
+                <p>Once your account is set up, familiarize yourself with the platform's interface. Understand how to search for items, place bids, and manage your auctions. Utilize features like watchlists and notifications to stay updated on bidding activities.</p>
+            </section>
+        </article>
+
+        <article>
+            <section>
+                <h3>Understanding Auction Dynamics</h3>
+                <p>Online auctions can vary in their dynamics, such as auction types (e.g., English, Dutch), bidding increments, and auction duration. Each type has its strategy, so understanding these dynamics is crucial for successful bidding.</p>
+                <p>Shipping worldwide with trusted logistics partners, ensuring artworks reach you safely and on time.</p>
+            </section>
+            <section>
+                <h3>Setting a Budget</h3>
+                <p>Before participating in auctions, establish a budget based on your financial capability and the value of items you intend to bid on. Stick to your budget to avoid overbidding and financial strain.</p>
+            </section>
+            <section>
+                <h3>Timing Your Bids</h3>
+                <p>Timing is critical in online auctions. Place bids strategically, considering factors like auction ending times, bid increments, and competitive bidding patterns. Avoid bidding too early or too late to maximize your chances of winning.</p>
+            </section>
+            <section>
+                <h3>Using Proxy Bidding</h3>
+                <p>Proxy bidding allows you to set a maximum bid amount that the system automatically increases on your behalf until your limit is reached. Use proxy bidding to maintain your competitive edge without constant monitoring of the auction.</p>
+            </section>
+            <section>
+                <h3>Handling Last-Minute Bidding</h3>
+                <p>During the final moments of an auction, stay vigilant and be prepared to place your final bid strategically. Consider using bid sniping tools or setting reminders to ensure you don't miss out on opportunities.</p>
+            </section>
+        </article>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

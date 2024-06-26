@@ -23,7 +23,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
-  background-color: #000037;
+  background-color: #fff;
+  box-shadow: 0 0 1px grey;
 }
 
 figure {
@@ -49,6 +50,7 @@ section {
 .navbar__menu.active {
   display: block;
   padding: 0;
+  background-color: #000037;
 }
 
 .navbar__menu.active .navbar__dropdown {
@@ -89,7 +91,7 @@ section {
 .site-mobile-menu.active {
   position: fixed;
   padding: 10px 15px;
-  transition: all 200ms ease-in-out;
+  transition: translate 200ms ease-in-out;
   background: #000037;
   top: 0;
   width: 100vw;
@@ -167,7 +169,7 @@ a:focus {
   display: block;
   width: 25px;
   height: 3px;
-  background-color: #fff;
+  background-color: #000037;
   margin: 5px 0;
   transition: transform 0.3s ease;
 }
@@ -178,6 +180,7 @@ a:focus {
 
 .active .menu-bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
+  background-color: #fff;
 }
 
 .active .menu-bar:nth-child(2) {
@@ -186,6 +189,7 @@ a:focus {
 
 .active .menu-bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
+  background-color: #fff;
 }
 
 @media only screen and (min-width: 920px) {
@@ -194,14 +198,12 @@ a:focus {
   }
 
   header {
-    position: sticky;
-    top: 0;
-    display: flex;
     justify-content: center;
     gap: 4rem;
     background-color: #000037;
     z-index: 10;
     padding: 0;
+    box-shadow: none;
   }
 
   #site-navigation {

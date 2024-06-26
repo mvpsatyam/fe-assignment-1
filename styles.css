@@ -255,6 +255,7 @@ a:focus {
 @media only screen and (min-width: 1024px) {
   .navbar__menu {
     gap: 2rem;
+    padding-left: 0;
   }
 }
 
@@ -267,10 +268,6 @@ a:focus {
 @media only screen and (min-width: 1400px) {
   main {
     margin: 0 12.5rem;
-  }
-
-  .navbar__menu {
-    gap: 2rem;
   }
 }
 

@@ -263,6 +263,10 @@ a:focus {
   main {
     margin: 0 8rem;
   }
+
+  .navbar__menu {
+    padding-left: 2.5rem;
+  }
 }
 
 @media only screen and (min-width: 1400px) {
